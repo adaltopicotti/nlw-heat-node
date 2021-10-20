@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --exit-child src/server.ts",
-    "vercel-build": "node ./build"
+    "vercel-build": "node ./build",
+    "start": "node src/server.ts"
   },
   "dependencies": {
     "@prisma/client": "^3.3.0",
