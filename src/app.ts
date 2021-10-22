@@ -38,8 +38,11 @@ app.get("/github", (request, response) => {
 app.get("/signin/callback", (request, response) => {
   const { code } = request.query;
 
-  // response.redirect(`http://localhost:3000?code=${code}`)
-  return response.json(code)
+  console.log(request)
+  // response.redirect(`https://auth.expo.io/@adaltopicottijr/nlw-heat-app?code=${code}`)
+  response.redirect(`https://nlw-heat-web-six.vercel.app?code=${code}`)
+  
+  // return response.send(code)
 })
 
 
