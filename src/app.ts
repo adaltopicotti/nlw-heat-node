@@ -32,11 +32,13 @@ app.get("/", (request, response) => {
 
 app.get("/github", (request, response) => {
   response.redirect(`https://github.com/login/oauth/authorize?client_id=${process.env.GITHUB_CLIENT_ID}`)
+
 })
 
 app.get("/signin/callback", (request, response) => {
   const { code } = request.query;
 
+  // response.redirect(`http://localhost:3000?code=${code}`)
   return response.json(code)
 })
 
