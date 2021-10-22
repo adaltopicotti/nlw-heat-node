@@ -5,11 +5,10 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --exit-child src/server.ts",
-    "start": "node src/server.ts"
+    "build": "tsc --build"
   },
   "dependencies": {
     "@prisma/client": "^3.3.0",
-    "@vercel/node": "^1.12.1",
     "axios": "^0.23.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
